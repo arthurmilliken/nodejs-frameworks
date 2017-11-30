@@ -1,4 +1,4 @@
-const logger = require('./logger');
+const logger = require('../lib/logger');
 
 module.exports = (req, res) => {
   logger.info(`200 ${req.method} ${req.url} ` +

@@ -1,7 +1,7 @@
 const error = require('./error');
 const hello = require('./hello');
 const logging = require('../middleware/logging');
-const notFound = require('./not-found');
+// const notFound = require('./not-found');
 const status = require('./status');
 
 module.exports = function routes(app) {
@@ -9,5 +9,5 @@ module.exports = function routes(app) {
   app.get('/hello/:id', hello, logging);
   app.get('/error', error);
   // app.get('/path/to/route', func)
-  app.get('*', notFound);
+  // app.get('*', notFound);
 };
