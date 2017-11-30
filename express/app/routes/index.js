@@ -7,5 +7,6 @@ module.exports = function routes(app) {
   app.get('/', status);
   app.get('/hello/:id', hello);
   app.get('/error', error);
+  // app.get('/path/to/route', func)
   app.get('*', notFound);
 };

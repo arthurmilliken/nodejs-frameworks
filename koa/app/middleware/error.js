@@ -5,7 +5,7 @@ module.exports = async (ctx, next) => {
     await next();
   } catch (err) {
     const { message, status = 500 } = err;
-    logger.error(`${ctx.method} ${ctx.url} "${message}" ${Date.now() - ctx.state.start}ms`);
+    logger.error(`${status} ${ctx.method} ${ctx.url} "${message}" ${Date.now() - ctx.state.start}ms`);
     ctx.status = status;
     ctx.body = {
       error: { status, message },

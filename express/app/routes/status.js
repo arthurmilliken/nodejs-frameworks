@@ -1,3 +1,5 @@
+const logRequest = require('../lib/log-request');
+
 const start = Date.now();
 
 module.exports = (req, res) => {
@@ -5,4 +7,5 @@ module.exports = (req, res) => {
     message: 'welcome to express!',
     uptime_ms: Date.now() - start,
   });
+  logRequest(req, res);
 };

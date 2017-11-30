@@ -7,7 +7,6 @@ app.use(require('./middleware/auth'));
 
 require('./routes')(app); // routes
 
-app.use(require('./middleware/logging'));
 app.use(require('./middleware/error'));
 
 const PORT = 8080;
