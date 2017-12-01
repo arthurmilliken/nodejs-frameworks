@@ -1,5 +1,4 @@
 const query = require('../lib/query');
-// const logRequest = require('../lib/log-request');
 
 module.exports = (req, res, next) => {
   const start = Date.now();
@@ -17,7 +16,6 @@ module.exports = (req, res, next) => {
 
       res.json(payload);
       next();
-      // logRequest(req, res);
     },
     next,
   );
