@@ -14,4 +14,4 @@ require('./routes')(app);
 
 const PORT = 8080;
 app.listen(PORT);
-logger.info(`listening on port: ${PORT}`);
+logger.info(`koa - listening on port: ${PORT}`);

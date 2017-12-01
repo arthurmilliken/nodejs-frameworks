@@ -11,5 +11,5 @@ app.use(require('./middleware/error'));
 
 const PORT = 8080;
 app.listen(PORT, () => {
-  logger.info(`listening on port: ${PORT}`);
+  logger.info(`express - listening on port: ${PORT}`);
 });
