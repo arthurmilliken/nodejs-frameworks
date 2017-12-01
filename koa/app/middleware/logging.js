@@ -10,7 +10,7 @@ module.exports = async (ctx, next) => {
     ctx.status = status;
     ctx.body = {
       error: { status, message },
-    };    
+    };
     logger.error(`${status} ${ctx.method} ${ctx.url} "${message}" ${Date.now() - start}ms`);
   }
 };
